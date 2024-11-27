@@ -6,6 +6,9 @@
     --brand-tertiary-500: #F2BD1D;
 }
 
+main {
+    min-height: 60vh;
+}
 body {
     background: #0b0b1d;
     box-sizing: border-box;
@@ -21,12 +24,17 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-weight: 600;
+    font-weight: 700;
 }
 p, span, div, a, li {
     font-family: "Hind Madurai", sans-serif;
-    color: white;
+    color: #ffffffb0;
     font-weight: 400;
+    font-size: 18px;
+}
+img {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -45,5 +53,13 @@ p, span, div, a, li {
         &:hover {
             background: transparent;
         }
+    }
+}
+.padding {
+    &-bottom {
+        padding-bottom: 50px;
+    }
+    &-top {
+        padding-top: 50px;
     }
 }

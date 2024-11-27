@@ -1,3 +1,8 @@
 @use "core/core.scss";
 @use "core/header.scss";
 @use "core/footer.scss";
+
+// Section
+@use "sections/hero.scss";
+@use "sections/text-image.scss";
+@use "sections/admin-form.scss";

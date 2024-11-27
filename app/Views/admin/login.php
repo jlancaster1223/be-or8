@@ -49,24 +49,22 @@
     </header>
 
     <main>
-        <section class="hero padding-top padding-bottom">
+        <section class="admin-form padding-top padding-bottom">
             <div class="container">
-                <h1>Complete site monitoring in one place</h1>
-
-                <img src="https://placehold.co/1600x900" alt="">
-            </div>
-        </section>
-
-        <section class="text-image padding-top padding-bottom">
-            <div class="container">
-                <div class="text-image__left">
-                    <h2>What is Be Or8?</h2>
-                    <p><i>Be Or8</i> is a WordPress site management tool where you can easily track your site's uptime, page speed, and SEO rankings, as well as receive alerts when something goes wrong.</p>
-                    <p>Whether you're a blogger, business owner, or developer, <i>Be Or8</i> is the perfect tool to help you keep your site running smoothly.</p>
-                </div>
-                <div class="text-image__right">
-                    <img src="https://placehold.co/1600x900" alt="">
-                </div>
+                <form action="#" method="post">
+                    <h1>Login</h1>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="button button-primary">Login</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
