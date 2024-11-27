@@ -1,0 +1,65 @@
+:root {
+    --brand-primary: #BF1B86;
+    --brand-secondary: #2F048C;
+    --brand-secondary-500: #1B0273;
+    --brand-tertiary: #F2CE1B;
+    --brand-tertiary-500: #F2BD1D;
+}
+
+main {
+    min-height: 60vh;
+}
+body {
+    background: #0b0b1d;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    max-width: 1600px;
+    width: 86%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 700;
+}
+p, span, div, a, li {
+    font-family: "Hind Madurai", sans-serif;
+    color: #ffffffb0;
+    font-weight: 400;
+    font-size: 18px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.button {
+    padding: 16px 32px;
+    display: block;
+    border-radius: 50px;
+    width: fit-content;
+    text-decoration: none;
+
+    &.button-primary {
+        background: var(--brand-primary);
+        border: 2px solid var(--brand-primary);
+        color: white;
+
+        &:hover {
+            background: transparent;
+        }
+    }
+}
+.padding {
+    &-bottom {
+        padding-bottom: 50px;
+    }
+    &-top {
+        padding-top: 50px;
+    }
+}
