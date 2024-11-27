@@ -188,5 +188,17 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 25px;
 }
+.admin-form form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.admin-form form .form-group input {
+  min-width: 230px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 20px;
+}
 
 /*# sourceMappingURL=index.css.map */
