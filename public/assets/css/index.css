@@ -93,6 +93,11 @@ img {
   width: -webkit-fill-available;
   flex: 4;
 }
+@media screen and (max-width: 700px) {
+  .header__menu {
+    display: none;
+  }
+}
 .header__menu nav ul {
   list-style: none;
   margin: 0;
@@ -117,6 +122,11 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .footer__bottom .container {
+    flex-direction: column-reverse;
+  }
 }
 .footer__bottom nav ul {
   display: flex;
@@ -147,6 +157,11 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 700px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
 .hero img {
   margin-top: 100px;
 }
@@ -157,6 +172,11 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 50px;
+}
+@media screen and (max-width: 800px) {
+  .text-image .container {
+    flex-direction: column;
+  }
 }
 .text-image.reverse .container {
   flex-direction: row-reverse;
@@ -199,6 +219,158 @@ img {
   padding: 10px;
   font-size: 18px;
   border-radius: 20px;
+}
+
+.features .container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+@media screen and (max-width: 700px) {
+  .features .container {
+    flex-direction: column;
+  }
+}
+.features__item {
+  flex: 1;
+}
+.features__item svg {
+  width: 80px;
+  height: auto;
+  aspect-ratio: 1;
+  fill: white;
+  opacity: 0.6;
+}
+
+.admin.dashboard {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.admin.dashboard aside {
+  flex: 1;
+  padding: 0 30px;
+  overflow: hidden;
+}
+.admin.dashboard main {
+  flex: 3;
+  margin-right: 30px;
+}
+.admin.dashboard main header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.admin.dashboard .sites__list {
+  overflow: auto;
+  height: -webkit-fill-available;
+  scrollbar-color: var(--brand-primary) var(--brand-secondary);
+}
+.admin.dashboard .sites__list__item {
+  padding: 20px;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+}
+.admin.dashboard .sites__list__item.active {
+  border-color: var(--brand-primary);
+}
+.admin.dashboard .sites__list__item h3 {
+  margin: 0;
+}
+.admin.dashboard .sites__list__item__header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.admin.dashboard .sites__list__item__tag {
+  padding: 8px 26px;
+  border-radius: 20px;
+  width: fit-content;
+}
+.admin.dashboard .sites__list__item__tag__primary {
+  background: var(--brand-primary);
+}
+.admin.dashboard .sites__list__item__tag__warning {
+  background: red;
+}
+.admin.dashboard .sites__search {
+  position: relative;
+  width: 80%;
+  margin-bottom: 30px;
+}
+.admin.dashboard .sites__search input[type=text] {
+  padding: 10px;
+  width: 100%;
+  border-radius: 50px;
+  font-size: 18px;
+}
+.admin.dashboard .sites__search:after {
+  position: absolute;
+  top: 10%;
+  right: -18px;
+  content: "";
+  background: var(--brand-primary);
+  height: 80%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+}
+.admin.dashboard .tabs {
+  height: -webkit-fill-available;
+}
+.admin.dashboard .tabs__labels {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 30px;
+}
+.admin.dashboard .tabs__labels__label {
+  padding: 8px 16px;
+  color: white;
+  opacity: 0.4;
+}
+.admin.dashboard .tabs__labels__label:hover {
+  cursor: pointer;
+}
+.admin.dashboard .tabs__labels__label.active {
+  border-bottom: 1px solid white;
+  opacity: 1;
+}
+.admin.dashboard .tabs__content {
+  height: -webkit-fill-available;
+}
+.admin.dashboard .tabs__content__item {
+  display: none;
+  transition: all 1s;
+}
+.admin.dashboard .tabs__content__item.active {
+  display: block;
+}
+.admin.dashboard .uptimeGraph {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+.admin.dashboard .uptimeGraph__bar {
+  border: 1px solid white;
+  height: 30px;
+  width: 3px;
+}
+.admin.dashboard .uptimeGraph__bar__up {
+  border-color: green;
+  background-color: green;
+}
+.admin.dashboard .uptimeGraph__bar__down {
+  border-color: red;
+  background-color: red;
 }
 
 /*# sourceMappingURL=index.css.map */
